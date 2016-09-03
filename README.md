@@ -4,7 +4,7 @@ This is the website for Bobcat Ventures, Bates's entrepreneurship competition.
 
 ## Viewing
 
-Run `python -m SimpleHTTPServer 8000` and go to [localhost:8000](localhost:8000) in your browser.
+Run `python -m SimpleHTTPServer 8000` and go to [localhost:8000](http://localhost:8000/) in your browser.
 
 ## Editing
 
