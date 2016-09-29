@@ -6,19 +6,22 @@
         <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height" />
         <meta name="mobile-web-app-capable" content="yes">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,600,700,900" rel="stylesheet">
-        <link href="styles/style.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="styles/main.css" rel="stylesheet">
     </head>
     <body>
-        <div id="nav-bar">
-            <a href="#" class="logo"><img src="assets/logo/logo2016.svg" alt=""></a>
-            <a href="#about">About</a>
-            <a href="#winners">Winners</a>
-            <a href="#contact">Contact</a>
-        </div>
         <section id="intro">
+            <div id="navbar">
+                <a href="#" class="logo"><img src="assets/logo/logo2016.png" alt=""></a>
+                <div class="links-right">
+                    <a href="#about" class="scroll">About</a>
+                    <a href="#winners" class="scroll">Winners</a>
+                    <a href="#contact" class="scroll">Contact</a>
+                </div>
+            </div>
             <h1>Bobcat Ventures</h1>
             <p>Bates's own entrepreneurship competition</p>
-            <button><i class="fa fa-angle-down"></i></button>
+            <a href="#mission" class="scroll scroll-down"><i class="fa fa-angle-down"></i></a>
         </section>
         <section id="mission">
             <div class="section-container">
@@ -85,21 +88,21 @@
                         <p>A Bates theatre professor who led a workshop on presentation and pitch skills prior to the competition.</p>
                     </div>
                 </div>
-                <p><strong>2015 Judges:</strong> Victor Otley, Patrick Jackson, Ross Brockman</p>
-                <p><strong>2015 Keynote Speaker:</strong> Matt Perejda</p>
-                <p><strong>2016 Judges:</strong> Dan Vannoni, Ross Brockman, Jack Keigwin</p>
-                <p><strong>2016 Keynote Speaker:</strong> Graham Veysey</p>
+                <p class="extra-speakers"><strong>2015 Judges:</strong> Victor Otley, Patrick Jackson, Ross Brockman</p>
+                <p class="extra-speakers"><strong>2015 Keynote Speaker:</strong> Matt Perejda</p>
+                <p class="extra-speakers"><strong>2016 Judges:</strong> Dan Vannoni, Ross Brockman, Jack Keigwin</p>
+                <p class="extra-speakers"><strong>2016 Keynote Speaker:</strong> Graham Veysey</p>
             </div>
         </section>
         <section id="winners">
             <div class="section-container">
                 <h1>Past Winners</h1>
                 <div class="winner">
-                    <img src="assets/winners/blended.png" alt="">
+                    <img src="assets/winners/blended.jpg" alt="">
                     <p>Blended is a mobile smoothie cart here to serve the Bates community by combining healthiness with convenience. When Commons is closed before athletics or a long night in the library, Blended will be there to provide you with a healthy, hydrating, energy-boosting and delicious smoothie."</p>
                 </div>
                 <div class="winner">
-                    <h2>Green Line Productions</h2>
+                    <h2 class="greenline">Green Line Productions</h2>
                     <p>Green Line Productions is an aerial videography and photography production company based in Maine. Using drones with our own software, our company provides customized videography and photography services for private events as well as the real estate, construction, and tourism industries. </p>
                 </div>
                 <div class="winner">
@@ -107,7 +110,7 @@
                     <p>Lightyear Strategies is dedicated to simplifying the process of digital branding. We do so by creating cost effective, user friendly websites for our clients on platforms such as Squarespace, Weebly, and Shopify.</p>
                 </div>
                 <div class="winner">
-                    <h2>SpotShot</h2>
+                    <img src="assets/winners/spotshot.png" alt="">
                     <p>SpotShot is an iOS application used to create an overlay image from a video.</p>
                 </div>
             </div>
@@ -134,20 +137,24 @@
         <section id="contact">
             <div class="section-container">
                 <h1>Contact Us</h1>
-                <p>For general information, contact <a href="mailto:mcowan@bates.edu">mcowan@bates.edu</a></p>
-                <p>For information on fundraising, contact <a href="mailto:efoushee@bates.edu">efoushee@bates.edu</a></p>
+                <p>For general information, contact <a href="mailto:mcowan@bates.edu">mcowan@bates.edu</a>.</p>
+                <p>For information on fundraising, contact <a href="mailto:efoushee@bates.edu">efoushee@bates.edu</a>.</p>
             </div>
         </section>
         <footer>
-            <p>Copyright &copy; 2016 <strong>Bobcat Ventures</strong>. All rights reserved.</p>
-            <div class="social">
-                <a href="https://www.facebook.com/Bobcat-Ventures-1492426297671768/">
-                    <i class="fa fa-facebook"></i>
-                </a>
+            <div class="section-container">
+                <div class="row">
+                    <p>Copyright &copy; 2016 <strong>Bobcat Ventures</strong>. All rights reserved.</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/Bobcat-Ventures-1492426297671768/">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
-        <!--
-        <script src="scripts/retina.min.js"></script>
-        <script src="scripts/scripts.js"></script>-->
+        <script src="scripts/jquery.min.js"></script>
+        <!--<script src="scripts/retina.min.js"></script>-->
+        <script src="scripts/custom.js"></script>
     </body>
 </html>
