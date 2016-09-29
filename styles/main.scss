@@ -1,0 +1,127 @@
+@import "normalize";
+
+/* =============================================================================
+   GLOBAL VARIABLES
+   ========================================================================== */
+$black: #333333;
+$primary: #861225;
+
+/* =============================================================================
+   FOUNDATION
+   ========================================================================== */
+body {
+    font-family: 'Source Sans Pro', 'Helvetica Neue' Helvetica, Arial, sans-serif;
+    color: $black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* =============================================================================
+   REUSABLE COMPONENTS
+   ========================================================================== */
+
+.section-container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+button {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: transparent;
+    color: $link-normal;
+    border: 2px solid $link-normal;
+    cursor: pointer;
+    cursor: hand;
+
+    &:hover, &:active {
+        color: $link-active;
+        border-color: $link-active;
+    }
+}
+
+@mixin button-style($light, $dark) {
+    border: none;
+    padding: 10px 16px;
+    color: white;
+    background-color: $light;
+    box-shadow: 0 3px 0 $dark;
+    margin-bottom: 10px;
+
+    &:hover, &:active {
+        background-color: lighten($light, 4%);
+        // opacity: 0.92;
+    }
+}
+
+/* =============================================================================
+   NAVBAR
+   ========================================================================== */
+
+$nav-font-size: 15px;
+
+#nav-bar {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding: 20px 40px;
+    align-items: center;
+    z-index: 11;
+
+    a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: $link-normal;
+        font-size: $nav-font-size;
+
+        &.active, &:hover, &:active {
+            color: $link-active;
+        }
+    }
+
+    .logo {
+        flex-grow: 1;
+
+        img {
+            vertical-align: middle;
+
+            &.logo-img {
+                height: 40px;
+                margin-right: 10px;
+            }
+
+            &.logo-text {
+                height: 22px;
+            }
+        }
+    }
+
+    button {
+        font-size: $nav-font-size;
+    }
+
+    @media (max-width: 570px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .logo {
+            flex: 1 0 100%;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+/* =============================================================================
+   INTRO
+   ========================================================================== */

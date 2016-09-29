@@ -5,90 +5,149 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="initial-scale=1.0, user-scalable=0, width=device-width, height=device-height" />
         <meta name="mobile-web-app-capable" content="yes">
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,100,700,900' rel='stylesheet' type='text/css'>
-        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,300i,400,600,700,900" rel="stylesheet">
         <link href="styles/style.css" rel="stylesheet">
     </head>
     <body>
         <div id="nav-bar">
-            <a class="logo"><img src="img/logo/thundr_logo_white.png" alt="" class="logo-img"><img src="img/logo/thundr_logo_text.png" alt="" class="logo-text"></a>
-            <a href="index" class="active">Portfolio</a>
-            <a href="company">Company</a>
-            <a href="mailto:derek.lo@yale.edu" class="contact"><button>Contact</button></a>
+            <a href="#" class="logo"><img src="assets/logo/logo2016.svg" alt=""></a>
+            <a href="#about">About</a>
+            <a href="#winners">Winners</a>
+            <a href="#contact">Contact</a>
         </div>
         <section id="intro">
-            <div id="particles-js"></div>
+            <h1>Bobcat Ventures</h1>
+            <p>Bates's own entrepreneurship competition</p>
+            <button><i class="fa fa-angle-down"></i></button>
+        </section>
+        <section id="mission">
             <div class="section-container">
-                <h1>We create software products</h1>
-                <button>View our work</button>
+                <h1>Mission</h1>
+                <p>Bobcat Ventures provides a space at Bates where entrepreneurship can thrive.  By hosting this competition, we hope to build a bridge between our liberal arts education with the expanding industry of entrepreneurship in order to put theory into application. Bobcat Ventures is the start to creating a campus culture of entrepreneurship and fostering creativity at Bates.</p>
             </div>
         </section>
-        <section id="feature">
+        <section id="about">
             <div class="section-container">
-                <p>Work featured in</p>
-                <img src="img/home/press/business_insider.png" alt="">
-                <img src="img/home/press/yahoo.png" alt="">
-                <img src="img/home/press/product-hunt-logo-horizontal-orange.png" alt="">
-                <img src="img/home/press/tech_crunch.png" alt="">
-                <img src="img/home/press/ydn.png" alt="">
+                <h1>What We Do</h1>
+                <div class="about-detail">
+                    <img src="assets/images/1.jpg" alt="">
+                    <p>We provide technical skills, mentorship, and business skill-building workshops.</p>
+                </div>
+                <div class="about-detail">
+                    <img src="assets/images/2.jpg" alt="">
+                    <p>We award prize funding to make ideas into reality. </p>
+                </div>
+                <div class="about-detail">
+                    <img src="assets/images/3.jpg" alt="">
+                    <p>We engage the entire Bates community.</p>
+                </div>
+                <div class="about-detail">
+                    <img src="assets/images/4.jpg" alt="">
+                    <p>We provide students with the tools to launch their ideas into the world. </p>
+                </div>
             </div>
         </section>
-        <section id="portfolio">
+        <section id="workshops">
             <div class="section-container">
-                <div class="project py">
-                    <div class="right center">
-                        <img src="img/home/portfolio/py.png" alt="">
-                    </div><!--
-                 --><div class="left">
-                        <h2>Py</h2>
-                        <p>Py has an ambitious goal: to democratize and gamify education. We designed the user interface for Py from the ground up, and created iOS and Android apps.</p>
-                        <p class="categories">&#8226; UI/UX Design, iOS Development, Android Development</p>
-                        <a href="http://py-app.com/" target=_blank><button>Launch</button></a>
+                <h1>2016 Workshops</h1>
+                <div class="speaker">
+                    <img src="assets/people/DonGooding.jpg" alt="">
+                    <div class="speaker-info">
+                        <h2>Don Gooding</h2>
+                        <p>Former director of the Maine Center for Entrepreneurial Development came to lead a workshop on the business model canvas.</p>
                     </div>
                 </div>
-                <div class="project umi">
-                    <div class="right center">
-                        <img src="img/home/portfolio/umi.png" alt="">
-                    </div><!--
-                 --><div class="left">
-                        <h2>Umi</h2>
-                        <p>Umi is changing the way people order food by crowdsourcing home-cooked meals. We created a home-screen concept for them that we're proud of.</p>
-                        <p class="categories">&#8226; UI Design</p>
-                        <a href="http://umi.kitchen" target=_blank><button>Launch</button></a>
+                <div class="speaker">
+                    <img src="assets/people/DeborahRiegel.jpg" alt="">
+                    <div class="speaker-info">
+                        <h2>Deborah Riegel</h2>
+                        <p>A recognized expert in presentation and communication skills led a Skype workshop on presentation and interpersonal communication skills specifically on having difficult conversations.</p>
                     </div>
                 </div>
-                <div class="project cm">
-                    <img src="img/home/portfolio/conservation_matrix.png" alt="" class="full">
-                    <div class="left">
-                        <h2>Conservation Matrix</h2>
-                        <p>The goal of Sumit and Thomas at Conservation Matrix is simple: to make investing in sustainable, high-quality real asset projects easier. We designed and built their website.</p>
-                    </div><!--
-                 --><div class="right center">
-                        <p class="categories">&#8226; UI Design, Website Development</p>
-                        <!--<a href="http://conservationmatrix.com" target=_blank><button>Launch</button></a>-->
+                <div class="speaker">
+                    <img src="assets/people/ReidChristian.jpg" alt="">
+                    <div class="speaker-info">
+                        <h2>Reid Christian</h2>
+                        <p>Associate at Battery Ventures, Reid focuses on venture investments in enterprise infrastructure and software companies led a Skype workshop on startup venture funding.</p>
                     </div>
                 </div>
-                <div class="project snapcash">
-                    <div class="right center">
-                        <img src="img/home/portfolio/snapcash.png" alt="">
-                    </div><!--
-                 --><div class="left">
-                        <h2>SnapCash</h2>
-                        <p>Visualize your spending by taking pictures of your purchases. Pictures are automatically categorized using deep learning. Over 20k downloads.</p>
-                        <p class="categories">&#8226; iOS Development, UI Design, UX Design</p>
-                        <a href="https://itunes.apple.com/us/app/snapcash/id900093370?mt=8" target=_blank><button>Launch</button></a>
+                <div class="speaker">
+                    <img src="assets/people/RossBrockman.jpg" alt="">
+                    <div class="speaker-info">
+                        <h2>Ross Brockman</h2>
+                        <p>One of the founders of Downeast Cider, Ross led a discussion based workshop on his experience founding a company after Bates.</p>
                     </div>
                 </div>
+                <div class="speaker">
+                    <img src="assets/people/KatiVecsey.jpg" alt="">
+                    <div class="speaker-info">
+                        <h2>Kati Vecsey</h2>
+                        <p>A Bates theatre professor who led a workshop on presentation and pitch skills prior to the competition.</p>
+                    </div>
+                </div>
+                <p><strong>2015 Judges:</strong> Victor Otley, Patrick Jackson, Ross Brockman</p>
+                <p><strong>2015 Keynote Speaker:</strong> Matt Perejda</p>
+                <p><strong>2016 Judges:</strong> Dan Vannoni, Ross Brockman, Jack Keigwin</p>
+                <p><strong>2016 Keynote Speaker:</strong> Graham Veysey</p>
+            </div>
+        </section>
+        <section id="winners">
+            <div class="section-container">
+                <h1>Past Winners</h1>
+                <div class="winner">
+                    <img src="assets/winners/blended.png" alt="">
+                    <p>Blended is a mobile smoothie cart here to serve the Bates community by combining healthiness with convenience. When Commons is closed before athletics or a long night in the library, Blended will be there to provide you with a healthy, hydrating, energy-boosting and delicious smoothie."</p>
+                </div>
+                <div class="winner">
+                    <h2>Green Line Productions</h2>
+                    <p>Green Line Productions is an aerial videography and photography production company based in Maine. Using drones with our own software, our company provides customized videography and photography services for private events as well as the real estate, construction, and tourism industries. </p>
+                </div>
+                <div class="winner">
+                    <img src="assets/winners/lightyear.png" alt="">
+                    <p>Lightyear Strategies is dedicated to simplifying the process of digital branding. We do so by creating cost effective, user friendly websites for our clients on platforms such as Squarespace, Weebly, and Shopify.</p>
+                </div>
+                <div class="winner">
+                    <h2>SpotShot</h2>
+                    <p>SpotShot is an iOS application used to create an overlay image from a video.</p>
+                </div>
+            </div>
+        </section>
+        <section id="news">
+            <div class="section-container">
+                <h1>In The News</h1>
+                <a href="http://www.thebatesstudent.com/2016/03/bobcat-ventures-the-real-shark-tank/">
+                    <div class="article">
+                        <p class="where">The Bates Student</p>
+                        <p class="title">Bobcat Ventures: the real Shark Tank</p>
+                        <p class="data">3.30.16 By Mariam Hayrapetyan</p>
+                    </div>
+                </a>
+                <a href="https://www.bates.edu/news/2016/04/07/bates-in-the-news-april-8-2016/">
+                    <div class="article">
+                        <p class="where">Bates.edu</p>
+                        <p class="title">Bates in the News: April 8, 2016</p>
+                        <p class="data">4.7.16 By Jay Burns</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="section-container">
+                <h1>Contact Us</h1>
+                <p>For general information, contact <a href="mailto:mcowan@bates.edu">mcowan@bates.edu</a></p>
+                <p>For information on fundraising, contact <a href="mailto:efoushee@bates.edu">efoushee@bates.edu</a></p>
             </div>
         </section>
         <footer>
-            <span class="copyright footer-item">&copy; 2016 Thundr, LLC</span>
-            <a href="mailto:derek.lo@yale.edu" class="contact footer-item"><button>Contact</button></a>
+            <p>Copyright &copy; 2016 <strong>Bobcat Ventures</strong>. All rights reserved.</p>
+            <div class="social">
+                <a href="https://www.facebook.com/Bobcat-Ventures-1492426297671768/">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </div>
         </footer>
-        <script src="scripts/jquery-2.1.4.min.js"></script>
-        <script src="scripts/particles.min.js"></script>
+        <!--
         <script src="scripts/retina.min.js"></script>
-        <!--<script type="text/javascript" src="scripts/jquery.ba-bbq.min.js"></script>-->
-        <script type="text/javascript" src="scripts/scripts.js"></script>
+        <script src="scripts/scripts.js"></script>-->
     </body>
 </html>
