@@ -506,7 +506,9 @@ section:nth-child(even) {
   margin: 30px 0; }
   #about .about-detail img {
     width: 240px;
-    height: 160px; }
+    height: 160px;
+    -ms-flex-negative: 1;
+    flex-shrink: 0; }
   #about .about-detail:nth-child(even) img {
     margin-right: 40px; }
   #about .about-detail:nth-child(odd) img {

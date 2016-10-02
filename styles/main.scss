@@ -201,9 +201,10 @@ section:nth-child(even) {
 
         img {
             $img-width: 240px;
-
             width: $img-width;
             height: $img-width * 2 / 3;
+            -ms-flex-negative: 1;
+            flex-shrink: 0;
         }
 
         $img-margin: 40px;
