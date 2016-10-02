@@ -441,6 +441,8 @@ section:nth-child(even) {
       height: 100px; }
     @media (max-width: 767px) {
       #intro #navbar {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center; }
         #intro #navbar .links-right {
           display: none; } }
@@ -517,10 +519,15 @@ section:nth-child(even) {
     font-weight: 400; }
   @media (max-width: 480px) {
     #about .about-detail {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column; }
       #about .about-detail img {
         margin-left: 0 !important;
         margin-right: 0 !important;
+        -webkit-box-ordinal-group: 1 !important;
+        -ms-flex-order: 0 !important;
         order: 0 !important; } }
 
 /* =============================================================================

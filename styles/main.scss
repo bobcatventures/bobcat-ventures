@@ -110,7 +110,9 @@ section:nth-child(even) {
         }
 
         @media #{$media-tablet} {
-            justify-content: center;
+            -webkit-box-pack: center;
+               -ms-flex-pack: center;
+             justify-content: center;
             .links-right {
                 display: none;
             }
@@ -226,12 +228,17 @@ section:nth-child(even) {
         }
 
         @media #{$media-phone} {
-            flex-direction: column;
+               -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
 
             img {
                 margin-left: 0 !important;
                 margin-right: 0 !important;
-                order: 0 !important;
+                -webkit-box-ordinal-group: 1 !important;
+                -ms-flex-order: 0 !important;
+                    order: 0 !important;
             }
         }
     }
