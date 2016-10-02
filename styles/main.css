@@ -369,12 +369,7 @@ textarea {
    ========================================================================== */
 /* Fonts */
 /* Font Weights (for Source Sans Pro) */
-/* Media Queries (Bootstrap) 
-$media-large: "(min-width: 1200px)"; // Large desktops and laptops
-$media-medium: "(max-width: 1199px)"; // Landscape tablets and medium desktops
-$media-small: "(max-width: 991px)"; // Portrait tablets and small desktops
-$media-tablet: "(max-width: 767px)"; // Landscape phones and portrait tablets
-$media-phone: "(max-width: 480px)"; // Portrait phones and smaller */
+/* Media Queries */
 /* =============================================================================
    FOUNDATION
    ========================================================================== */
@@ -420,12 +415,19 @@ section:nth-child(even) {
   background-size: cover;
   background-position: center top;
   height: 100vh;
-  position: relative; }
+  position: relative;
+  padding: 0 20px; }
   #intro #navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     padding: 20px 40px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between; }
     #intro #navbar a {
       margin: 0 25px;
@@ -437,13 +439,19 @@ section:nth-child(even) {
         opacity: 0.8; }
     #intro #navbar a.logo img {
       height: 100px; }
+    @media (max-width: 767px) {
+      #intro #navbar {
+        justify-content: center; }
+        #intro #navbar .links-right {
+          display: none; } }
   #intro h1 {
     font-size: 75px;
     text-align: center;
     margin-top: 10vh;
-    margin-bottom: 0;
     color: white;
-    font-weight: 400; }
+    font-weight: 400;
+    line-height: 1em;
+    margin-bottom: 10px; }
   #intro p {
     font-size: 28px;
     text-align: center;
@@ -454,6 +462,7 @@ section:nth-child(even) {
     position: absolute;
     left: 50%;
     bottom: 10vh;
+    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     color: white;
     border: 2px solid white;
@@ -467,6 +476,17 @@ section:nth-child(even) {
       vertical-align: middle; }
     #intro a.scroll-down.active, #intro a.scroll-down:hover, #intro a.scroll-down:active {
       background-color: rgba(255, 255, 255, 0.2); }
+  @media (max-width: 480px) {
+    #intro {
+      background-position: 80% top; }
+      #intro h1 {
+        margin-top: 5vh; } }
+  @media (max-width: 320px) {
+    #intro h1 {
+      margin-top: 3vh;
+      font-size: 60px; }
+    #intro p {
+      font-size: 22px; } }
 
 /* =============================================================================
    MISSION
@@ -475,7 +495,11 @@ section:nth-child(even) {
    WHAT WE DO
    ========================================================================== */
 #about .about-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 30px 0; }
   #about .about-detail img {
@@ -484,11 +508,20 @@ section:nth-child(even) {
   #about .about-detail:nth-child(even) img {
     margin-right: 40px; }
   #about .about-detail:nth-child(odd) img {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
     margin-left: 40px; }
   #about .about-detail p {
     font-size: 24px;
     font-weight: 400; }
+  @media (max-width: 480px) {
+    #about .about-detail {
+      flex-direction: column; }
+      #about .about-detail img {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        order: 0 !important; } }
 
 /* =============================================================================
    WORKSHOPS
@@ -510,6 +543,14 @@ section:nth-child(even) {
     #workshops .speaker .speaker-info p {
       margin-top: 5px;
       font-weight: 200; }
+  @media (max-width: 480px) {
+    #workshops .speaker img {
+      display: block;
+      margin: 0 auto; }
+    #workshops .speaker .speaker-info {
+      width: 100%; }
+      #workshops .speaker .speaker-info h2 {
+        text-align: center; } }
 #workshops .extra-speakers {
   margin: 3px 0;
   font-weight: 200; }
@@ -576,14 +617,25 @@ footer {
     padding-top: 20px;
     padding-bottom: 20px; }
   footer .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
-    footer .row p strong {
-      font-weight: 600; }
-    footer .row .social a {
-      color: white; }
-      footer .row .social a i {
-        font-size: 28px; }
+    footer .row p {
+      font-size: 16px; }
+      footer .row p a {
+        font-weight: 600;
+        color: white; }
+    footer .row .social {
+      margin-left: 30px; }
+      footer .row .social a {
+        color: white; }
+        footer .row .social a i {
+          font-size: 28px; }
 
 /*# sourceMappingURL=main.css.map */
